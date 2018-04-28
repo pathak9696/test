@@ -1,0 +1,7 @@
+.card.mb-3 {
+  margin-top: 80px;
+}
+
+td {
+  text-transform: capitalize;
+}
