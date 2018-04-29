@@ -1,3 +1,5 @@
-<employee-form [employee]="employee" [departments]="departments" (create)="addEmployee($event)" (remove)="removeEmployee($event)"
-  (update)="updateEmployee($event)">
-</employee-form>
+<div class="card mb-3 mT-80">
+  <app-employee-form [employee]="employee" [departments]="departments" (create)="addEmployee($event)" (remove)="removeEmployee($event)"
+    (update)="updateEmployee($event)">
+  </app-employee-form>
+</div>

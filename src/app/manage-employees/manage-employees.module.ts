@@ -20,6 +20,11 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: '/new',
+    component: fromContainers.EmployeeComponent,
+    pathMatch: 'full'
+  },
+  {
     path: ':id',
     component: fromContainers.EmployeeComponent,
     pathMatch: 'full'
@@ -28,7 +33,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(routes)],
-  declarations: [...fromContainers.containers, ...fromComponents.components, EmployeeFormComponent],
+  declarations: [...fromContainers.containers, ...fromComponents.components],
   providers: [...fromServices.services]
 })
 export class ManageEmployeesModule {}
